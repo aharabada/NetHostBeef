@@ -5,5 +5,5 @@ Dependencies = {corlib = "*", corlib = "*"}
 Name = "NetHostBeef"
 
 [Configs.Debug.Win64]
-LibPaths = ["$(ProjectDir)/dist/win-x64/nethost.lib"]
-PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/win-x64/*.dll\")"]
+LibPaths = ["$(ProjectDir)/nethost/runtimes/win-x64/native/nethost.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/nethost/runtimes/win-x64/native/*.dll\")"]
