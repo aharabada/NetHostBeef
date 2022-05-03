@@ -1,0 +1,12 @@
+FileVersion = 1
+Projects = {NetHostBeef = {Path = "NetHostBeef"}, BasicExample = {Path = "Examples/BasicExample"}}
+WorkspaceFolders = {Examples = ["BasicExample"]}
+
+[Workspace]
+StartupProject = "BasicExample"
+
+[Configs.Test.Win32]
+ConfigSelections = {corlib = {Config = "Debug"}}
+
+[Configs.Test.Win64]
+ConfigSelections = {corlib = {Config = "Debug"}}

@@ -1,0 +1,9 @@
+FileVersion = 1
+Dependencies = {corlib = "*", NetHostBeef = "*"}
+
+[Project]
+Name = "BasicExample"
+StartupObject = "BasicExample.Program"
+
+[Configs.Debug.Win64]
+PostBuildCmds = ["dotnet build \"$(ProjectDir)/Dotnet/DotNetBasicExample.csproj\" -c Debug -o \"$(TargetDir)\""]

@@ -1,0 +1,9 @@
+FileVersion = 1
+Dependencies = {corlib = "*", corlib = "*"}
+
+[Project]
+Name = "NetHostBeef"
+
+[Configs.Debug.Win64]
+LibPaths = ["$(ProjectDir)/dist/win-x64/nethost.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/win-x64/*.dll\")"]
